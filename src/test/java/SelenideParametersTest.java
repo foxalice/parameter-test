@@ -5,7 +5,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Stream;
 
 import static com.codeborne.selenide.CollectionCondition.texts;
@@ -24,14 +23,14 @@ public class SelenideParametersTest {
 
     static Stream<Arguments> selenideLocaleDataProvider() {
             return Stream.of(
-                    Arguments.of(Language.Eng, List.of(
+                    Arguments.of(Language.EN, List.of(
                             "Passengers",
                             "Freight",
                             "The Company",
                             "Investor Relations",
                             "Contacts"
                     )),
-                    Arguments.of(Language.Rus, List.of(
+                    Arguments.of(Language.RU, List.of(
                                     "Пассажирам",
                                     "Грузовые перевозки",
                                     "Компания",
