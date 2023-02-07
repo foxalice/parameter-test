@@ -48,7 +48,7 @@ public class SelenideParametersTest {
                 List<String> buttons
         ) {
             $(".icon-locale").click();
-            $$x("//div[@class='locale-switch']//a").find(text(language.name())).click();
+            $$x("//div[@class='locale-switch']//a").find(text(language.getDesc())).click();
             $$x("//nav[@class='header_site']//li")
                     .filter(visible)
                     .shouldHave(texts(buttons));
